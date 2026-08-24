@@ -6,12 +6,16 @@ D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\bin\Debug\net8.0\EStoreAdminModule.runtimeconfig.json
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\bin\Debug\net8.0\EStoreAdminModule.dll
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\bin\Debug\net8.0\EStoreAdminModule.pdb
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\bin\Debug\net8.0\EstoreModel.dll
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\bin\Debug\net8.0\EstoreModel.pdb
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\EStoreAdminModule.csproj.AssemblyReference.cache
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\rpswa.dswa.cache.json
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\EStoreAdminModule.GeneratedMSBuildEditorConfig.editorconfig
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\EStoreAdminModule.AssemblyInfoInputs.cache
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\EStoreAdminModule.AssemblyInfo.cs
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\EStoreAdminModule.csproj.CoreCompileInputs.cache
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\EStoreAdminModule.MvcApplicationPartsAssemblyInfo.cache
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\EStoreAdminModule.sourcelink.json
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -22,6 +26,7 @@ D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\swae.build.ex.cache
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\EStoreAd.4323B3FD.Up2Date
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\EStoreAdminModule.dll
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\refint\EStoreAdminModule.dll
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\EStoreAdminModule.pdb
