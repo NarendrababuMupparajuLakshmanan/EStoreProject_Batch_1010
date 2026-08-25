@@ -10,12 +10,28 @@ namespace EStoreAdminModule.Controllers
         public IActionResult Index()
         {
 
-            BrandModel model = new BrandModel();
+            List<BrandModel> brandModels = new List<BrandModel>();
 
-            model.Id = Guid.NewGuid();
-            model.Name = "Samsung";
+            brandModels.Add(new BrandModel()
+            {
+                Id = Guid.NewGuid(),
+                Name = "Samsung"
+            });
 
-            return Ok(model);
+            brandModels.Add(new BrandModel()
+            {
+                Id = Guid.NewGuid(),
+                Name = "Vivo"
+            });
+
+            brandModels.Add(new BrandModel()
+            {
+                Id = Guid.NewGuid(),
+                Name = "Reliance"
+            });
+
+            ///Return a ViewModel Object to the Corresponding Views
+            return View(brandModels);
         }
     }
 }

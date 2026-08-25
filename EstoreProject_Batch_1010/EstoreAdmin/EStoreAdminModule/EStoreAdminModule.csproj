@@ -10,4 +10,8 @@
     <ProjectReference Include="..\EstoreModel\EstoreModel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwRoot\" />
+  </ItemGroup>
+
 </Project>
