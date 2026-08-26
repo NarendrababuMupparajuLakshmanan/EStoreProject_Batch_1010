@@ -2,6 +2,19 @@
   "version": 4,
   "targets": {
     "net8.0": {
+      "EStoreAdminServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "EstoreModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EStoreAdminServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EStoreAdminServices.dll": {}
+        }
+      },
       "EstoreModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "EStoreAdminServices/1.0.0": {
+      "type": "project",
+      "path": "../../EStoreAdminServices/EStoreAdminServices.csproj",
+      "msbuildProject": "../../EStoreAdminServices/EStoreAdminServices.csproj"
+    },
     "EstoreModel/1.0.0": {
       "type": "project",
       "path": "../EstoreModel/EstoreModel.csproj",
@@ -23,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "EStoreAdminServices >= 1.0.0",
       "EstoreModel >= 1.0.0"
     ]
   },
@@ -60,6 +79,9 @@
           "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
+            "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\EStoreAdminServices\\EStoreAdminServices.csproj": {
+              "projectPath": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\EStoreAdminServices\\EStoreAdminServices.csproj"
+            },
             "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\EstoreAdmin\\EstoreModel\\EstoreModel.csproj": {
               "projectPath": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\EstoreAdmin\\EstoreModel\\EstoreModel.csproj"
             }

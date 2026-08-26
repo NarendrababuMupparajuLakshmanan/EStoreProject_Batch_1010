@@ -36,3 +36,5 @@ D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\obj\Debug\net8.0\ref\EStoreAdminModule.dll
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\bin\Debug\net8.0\libman.json
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\bin\Debug\net8.0\EStoreAdminModule.staticwebassets.runtime.json
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\bin\Debug\net8.0\EStoreAdminServices.dll
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminModule\bin\Debug\net8.0\EStoreAdminServices.pdb
