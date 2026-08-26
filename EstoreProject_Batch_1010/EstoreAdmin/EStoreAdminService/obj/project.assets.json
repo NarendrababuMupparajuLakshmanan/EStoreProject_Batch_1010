@@ -17,8 +17,8 @@
   "libraries": {
     "EstoreModel/1.0.0": {
       "type": "project",
-      "path": "../EstoreAdmin/EstoreModel/EstoreModel.csproj",
-      "msbuildProject": "../EstoreAdmin/EstoreModel/EstoreModel.csproj"
+      "path": "../EstoreModel/EstoreModel.csproj",
+      "msbuildProject": "../EstoreModel/EstoreModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\EStoreAdminServices\\EStoreAdminServices.csproj",
-      "projectName": "EStoreAdminServices",
-      "projectPath": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\EStoreAdminServices\\EStoreAdminServices.csproj",
+      "projectUniqueName": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\EstoreAdmin\\EStoreAdminService\\EStoreAdminService.csproj",
+      "projectName": "EStoreAdminService",
+      "projectPath": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\EstoreAdmin\\EStoreAdminService\\EStoreAdminService.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\EStoreAdminServices\\obj\\",
+      "outputPath": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\EstoreAdmin\\EStoreAdminService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,4 +1,4 @@
-using EStoreAdminServices;
+using EStoreAdminService;
 using EstoreModel.Services;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,7 +1,7 @@
 ﻿using EstoreModel.Models.Brands;
 using EstoreModel.Services;
 
-namespace EStoreAdminServices
+namespace EStoreAdminService
 {
     public class BrandService : IBrandService
     {
@@ -28,11 +28,6 @@ namespace EStoreAdminServices
             });
 
             return brandModels;
-        }
-
-        public void CreateBrand()
-        {
-            Console.WriteLine("Create Brand");
         }
     }
 }

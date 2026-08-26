@@ -1,7 +1,7 @@
 <Solution>
   <Folder Name="/EstoreAdmin/">
     <Project Path="EstoreAdmin/EStoreAdminModule/EStoreAdminModule.csproj" />
+    <Project Path="EstoreAdmin/EStoreAdminService/EStoreAdminService.csproj" Id="fd56602d-fa7a-4adc-8f7e-9dd6240e08ee" />
     <Project Path="EstoreAdmin/EstoreModel/EstoreModel.csproj" />
-    <Project Path="EStoreAdminServices/EStoreAdminServices.csproj" Id="b9bf19f4-6b51-48f5-b732-afb653be14d8" />
   </Folder>
 </Solution>
