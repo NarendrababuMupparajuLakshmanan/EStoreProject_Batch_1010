@@ -3,5 +3,6 @@
     <Project Path="EstoreAdmin/EStoreAdminModule/EStoreAdminModule.csproj" />
     <Project Path="EstoreAdmin/EStoreAdminService/EStoreAdminService.csproj" Id="fd56602d-fa7a-4adc-8f7e-9dd6240e08ee" />
     <Project Path="EstoreAdmin/EstoreModel/EstoreModel.csproj" />
+    <Project Path="EstoreAdmin/EStoreRepository/EStoreRepository.csproj" Id="3fa02aa6-ce5b-4694-adc0-9b293f3c5896" />
   </Folder>
 </Solution>

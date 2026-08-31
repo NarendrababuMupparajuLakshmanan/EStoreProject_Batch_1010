@@ -1,4 +1,5 @@
-﻿@using EstoreModel.Models.Brands
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using EstoreModel.Models.Brands
 @model List<BrandModel>;
 
 <html>
@@ -13,35 +14,54 @@
             <div class="h1 text-center bg-primary text-white mt-3">
                 List of Brands
             </div>
-            <div class="h1 text-center bg-secondary text-white mt-3">
-                @ViewBag.BrandService
-            </div>
-            <div class="h1 text-center bg-secondary text-white mt-3">
-                @ViewBag.BrandService1
-            </div>
-            <div class="h1 text-center bg-secondary text-white mt-3">
-                @ViewBag.BrandService2
-            </div>
+            
+           <div class="row mt-3">
+               <div class="col-md-3 col-lg-3 col-sm-3">
+                   <a class="btn btn-outline-primary"
+                        asp-controller="Brand"
+                        asp-action="CreateBrand">
+                        Create Brand
+                   </a>
+               </div>
+           </div>
 
-
-            <div class="row mt-5">
+            <div class="row mt-3">
                 <table class="table table-primary table-hover">
                     <thead>
                         <tr>
                             <td>Brand Id</td>
                             <td>Brand Name</td>
+                            <td>Delete</td>
                         </tr>
                     </thead>
 
                     <tbody>
-                        @foreach (BrandModel brandModel in Model)
+                        @if (Model.Count == 0)
                         {
                             <tr>
-                                <td>@brandModel.Id</td>
-                                <td>@brandModel.Name</td>
+                                <td colspan="3">
+                                    <div class="h3 text-bg-danger text-center">
+                                        There is no Brands Available
+                                    </div>
+                                </td>
                             </tr>
                         }
-
+                        else
+                        {
+                            @foreach (BrandModel brandModel in Model)
+                            {
+                                <tr>
+                                    <td>@brandModel.Id</td>
+                                    <td>@brandModel.Name</td>
+                                    <td>
+                                        <a class="btn btn-outline-danger"
+                                           asp-controller="Brand"
+                                           asp-action="DeleteBrand"
+                                           asp-route-Id="@brandModel.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        }
                     </tbody>
                 </table>
             </div>

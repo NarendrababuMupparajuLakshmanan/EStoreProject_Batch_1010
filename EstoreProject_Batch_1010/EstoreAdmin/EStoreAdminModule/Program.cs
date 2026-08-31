@@ -1,5 +1,7 @@
 using EStoreAdminService;
 using EstoreModel.Services;
+using EStoreRepository;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,13 @@ builder.Services.Add(new ServiceDescriptor(
     typeof(IBrandService),
     typeof(BrandService),
     ServiceLifetime.Transient));
+
+string connectionString = builder.Configuration.GetConnectionString("DbConnection").ToString();
+
+builder.Services.AddDbContext<BrandRepository>(
+    options => {
+        options.UseSqlServer(connectionString);
+    });
 
 var app = builder.Build();
 

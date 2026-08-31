@@ -1,31 +1,56 @@
 ﻿using EstoreModel.Models.Brands;
 using EstoreModel.Services;
+using EStoreRepository;
 
 namespace EStoreAdminService
 {
     public class BrandService : IBrandService
     {
+        private readonly BrandRepository _brandRepository;
+
+        public BrandService(BrandRepository brandRepository)
+        {
+            _brandRepository = brandRepository;
+        }
+
+        public void CreateBrand(CreateBrandModel createBrandModel)
+        {
+            if (createBrandModel == null)
+                throw new Exception("Create Brand is not null");
+
+            BrandModel brandModel = new BrandModel()
+            {
+                Id = Guid.NewGuid(),
+                Name = createBrandModel.Name,
+            };
+
+            this._brandRepository.Add(brandModel);
+            this._brandRepository.SaveChanges();
+        }
+
+        public void DeleteBrand(Guid Id)
+        {
+            if (Id == Guid.Empty)
+            {
+                throw new Exception("Brand Id is not null or Empty");
+            }
+
+            ///Get Brand based on Id
+            BrandModel? brandModel
+                = this._brandRepository.Brands.Where(e => e.Id == Id).FirstOrDefault();
+
+            if (brandModel == null)
+                throw new Exception("Brand Model Object is null or empty");
+
+            this._brandRepository.Remove(brandModel);
+            this._brandRepository.SaveChanges();
+        }
+
         public List<BrandModel> ListBrands()
         {
-            List<BrandModel> brandModels = new List<BrandModel>();
 
-            brandModels.Add(new BrandModel()
-            {
-                Id = Guid.NewGuid(),
-                Name = "Samsung"
-            });
-
-            brandModels.Add(new BrandModel()
-            {
-                Id = Guid.NewGuid(),
-                Name = "Vivo"
-            });
-
-            brandModels.Add(new BrandModel()
-            {
-                Id = Guid.NewGuid(),
-                Name = "Reliance"
-            });
+            List<BrandModel> brandModels =
+                this._brandRepository.Brands.ToList();
 
             return brandModels;
         }

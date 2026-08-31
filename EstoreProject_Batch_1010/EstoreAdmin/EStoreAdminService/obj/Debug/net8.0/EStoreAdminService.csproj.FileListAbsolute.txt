@@ -2,7 +2,9 @@ D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminServic
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminService\bin\Debug\net8.0\EStoreAdminService.dll
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminService\bin\Debug\net8.0\EStoreAdminService.pdb
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminService\bin\Debug\net8.0\EstoreModel.dll
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminService\bin\Debug\net8.0\EStoreRepository.dll
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminService\bin\Debug\net8.0\EstoreModel.pdb
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminService\bin\Debug\net8.0\EStoreRepository.pdb
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminService\obj\Debug\net8.0\EStoreAdminService.csproj.AssemblyReference.cache
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminService\obj\Debug\net8.0\EStoreAdminService.GeneratedMSBuildEditorConfig.editorconfig
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EStoreAdminService\obj\Debug\net8.0\EStoreAdminService.AssemblyInfoInputs.cache

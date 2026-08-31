@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EstoreModel\EstoreModel.csproj" />
+    <ProjectReference Include="..\EStoreRepository\EStoreRepository.csproj" />
   </ItemGroup>
 
 </Project>
