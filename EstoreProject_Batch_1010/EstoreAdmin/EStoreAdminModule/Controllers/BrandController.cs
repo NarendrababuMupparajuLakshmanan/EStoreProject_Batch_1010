@@ -20,7 +20,7 @@ namespace EStoreAdminModule.Controllers
         }
 
         [HttpGet]
-        [Route("/")]
+        [Route("ListBrand")]
         public IActionResult Index()
         {
 
@@ -54,6 +54,27 @@ namespace EStoreAdminModule.Controllers
         public ActionResult CreateBrand(CreateBrandModel createBrandModel)
         {
             this._brandService.CreateBrand(createBrandModel);
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        [Route("EditBrand/{Id:guid}")]
+        public ActionResult EditBrand(Guid Id) 
+        {
+
+            UpdateBrandMOdel updateBrandMOdel
+                = this._brandService.EditBrand(Id);
+
+            return View(updateBrandMOdel);
+        }
+
+        [HttpPost]
+        [Route("EditBrand/{Id:guid}")]
+        public ActionResult EditBrand(Guid Id, UpdateBrandMOdel updateBrandMOdel)
+        {
+
+            this._brandService.UpdateBrand(updateBrandMOdel);
 
             return RedirectToAction("Index");
         }

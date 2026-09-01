@@ -46,6 +46,25 @@ namespace EStoreAdminService
             this._brandRepository.SaveChanges();
         }
 
+        public UpdateBrandMOdel EditBrand(Guid Id)
+        {
+            if (Id == Guid.Empty)
+            {
+                throw new Exception("Brand Id is not null or Empty");
+            }
+
+            BrandModel? brandModel
+                = this._brandRepository.Brands.Where(e => e.Id == Id).FirstOrDefault();
+
+            UpdateBrandMOdel updateBrandMOdel = new UpdateBrandMOdel()
+            {
+                Id = brandModel.Id,
+                Name = brandModel.Name
+            };
+
+            return updateBrandMOdel;
+        }
+
         public List<BrandModel> ListBrands()
         {
 
@@ -53,6 +72,21 @@ namespace EStoreAdminService
                 this._brandRepository.Brands.ToList();
 
             return brandModels;
+        }
+
+        public void UpdateBrand(UpdateBrandMOdel updateBrandMOdel)
+        {
+            if (updateBrandMOdel == null)
+                throw new Exception("Update Brand is not null");
+
+            BrandModel brandModel = new BrandModel()
+            {
+                Id = updateBrandMOdel.Id,
+                Name = updateBrandMOdel.Name,
+            };
+
+            this._brandRepository.Update(brandModel);
+            this._brandRepository.SaveChanges();
         }
     }
 }

@@ -17,10 +17,21 @@ builder.Services.Add(new ServiceDescriptor(
     typeof(BrandService),
     ServiceLifetime.Transient));
 
+builder.Services.Add(new ServiceDescriptor(
+    typeof(ITypeService),
+    typeof(TypeService),
+    ServiceLifetime.Transient));
+
 string connectionString = builder.Configuration.GetConnectionString("DbConnection").ToString();
 
 builder.Services.AddDbContext<BrandRepository>(
     options => {
+        options.UseSqlServer(connectionString);
+    });
+
+builder.Services.AddDbContext<TypeRepository>(
+    options =>
+    {
         options.UseSqlServer(connectionString);
     });
 

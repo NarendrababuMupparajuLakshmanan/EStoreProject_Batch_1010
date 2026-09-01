@@ -9,5 +9,9 @@ namespace EstoreModel.Services
         void DeleteBrand(Guid Id);
 
         void CreateBrand(CreateBrandModel createBrandModel);
+
+        UpdateBrandMOdel EditBrand(Guid Id);
+
+        void UpdateBrand(UpdateBrandMOdel updateBrandMOdel);
     }
 }
