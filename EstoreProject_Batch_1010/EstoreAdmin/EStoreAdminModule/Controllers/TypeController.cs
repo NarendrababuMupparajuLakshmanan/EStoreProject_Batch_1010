@@ -32,5 +32,42 @@ namespace EStoreAdminModule.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        [Route("CreateType")]
+        public ActionResult CreateType()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [Route("CreateType")]
+        public ActionResult CreateType(CreateTypeModel createTypeModel)
+        {
+            this._typeService.CreateType(createTypeModel);
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        [Route("EditType/{id:guid}")]
+        public IActionResult EditType(Guid id)
+        {
+
+            UpdateTypeModel updateTypeModel
+                = this._typeService.EditType(id);
+
+            return View(updateTypeModel);
+        }
+
+        [HttpPost]
+        [Route("UpdateType/{Id:guid}")]
+        public ActionResult UpdateType(UpdateTypeModel updateTypeModel, Guid Id)
+        {
+
+            this._typeService.UpdateType(updateTypeModel);
+
+            return RedirectToAction("Index");
+        }
     }
 }

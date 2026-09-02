@@ -1,0 +1,66 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using EstoreModel.Models.Types
+@model UpdateTypeModel;
+
+<html>
+<head>
+    <title>List of Brands</title>
+    <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+            <form method="post" enctype="multipart/form-data">
+                <div class="col-lg-8 mx-auto rounder border p-3 mt-3">
+                    <div class="h1 text-center bg-primary text-white mt-3">
+                        Edit Type - @Model.Name
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-4 col-sm-4 col-md-4">
+                            <label asp-for="Id">Brand Id</label>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4">
+                            <input type="text" class="form-control" asp-for="Id" readonly />
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-4 col-sm-4 col-md-4">
+                            <label asp-for="Name">Type Name</label>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4">
+                            <input type="text" class="form-control" asp-for="Name" />
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-lg-4">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <button class="btn btn-outline-primary m-4"
+                                    asp-controller="Type"
+                                    asp-action="UpdateType"
+                                    asp-route-Id="@Model.Id">
+                                Submit
+                            </button>
+                            <a class="btn btn-outline-secondary">
+                                Cancel
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+            
+        </div>
+    </div>
+
+  
+   
+</body>
+</html>
