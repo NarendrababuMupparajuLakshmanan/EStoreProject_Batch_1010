@@ -22,6 +22,11 @@ builder.Services.Add(new ServiceDescriptor(
     typeof(TypeService),
     ServiceLifetime.Transient));
 
+builder.Services.Add(new ServiceDescriptor(
+    typeof(IProductService),
+    typeof(ProductService),
+    ServiceLifetime.Transient));
+
 string connectionString = builder.Configuration.GetConnectionString("DbConnection").ToString();
 
 builder.Services.AddDbContext<BrandRepository>(
@@ -34,6 +39,13 @@ builder.Services.AddDbContext<TypeRepository>(
     {
         options.UseSqlServer(connectionString);
     });
+
+builder.Services.AddDbContext<ProductRepository>(
+    options =>
+    {
+        options.UseSqlServer(connectionString);
+    });
+
 
 var app = builder.Build();
 

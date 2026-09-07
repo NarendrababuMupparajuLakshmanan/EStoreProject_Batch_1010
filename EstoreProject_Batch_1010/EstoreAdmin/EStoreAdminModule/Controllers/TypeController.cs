@@ -15,7 +15,7 @@ namespace EStoreAdminModule.Controllers
 
 
         [HttpGet]
-        [Route("/")]
+        [Route("ListType")]
         public IActionResult Index()
         {
             List<TypeModel> types =
