@@ -22,5 +22,12 @@ namespace EStoreAdminModule.Controllers
 
             return View(products);
         }
+
+        [HttpGet]
+        [Route("CreateProduct")]
+        public ActionResult CreateProduct()
+        {
+            return View();
+        }
     }
 }
