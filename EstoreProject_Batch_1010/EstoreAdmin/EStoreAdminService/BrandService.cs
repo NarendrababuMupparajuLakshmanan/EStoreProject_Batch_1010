@@ -65,6 +65,22 @@ namespace EStoreAdminService
             return updateBrandMOdel;
         }
 
+        public string GetBrandNameById(Guid Id)
+        {
+            if (Id == Guid.Empty)
+            {
+                throw new Exception("Brand Id is not null or Empty");
+            }
+
+            BrandModel? brandModel
+                = this._brandRepository.Brands.Where(e => e.Id == Id).FirstOrDefault();
+
+            if (brandModel == null)
+                throw new Exception("Brand Model Object is null or empty");
+
+            return brandModel.Name;
+        }
+
         public List<BrandModel> ListBrands()
         {
 

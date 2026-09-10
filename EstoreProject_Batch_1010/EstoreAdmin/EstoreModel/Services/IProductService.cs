@@ -4,6 +4,10 @@ namespace EstoreModel.Services
 {
     public interface IProductService
     {
-        List<ProductModel> GetAllProducts();
+        List<ProductList> GetAllProducts();
+
+        void CreateProduct(CreateProductModel createProductModel, string ImageFullPath);
+
+        void DeleteProduct(Guid Id, string ImageFullPath);
     }
 }

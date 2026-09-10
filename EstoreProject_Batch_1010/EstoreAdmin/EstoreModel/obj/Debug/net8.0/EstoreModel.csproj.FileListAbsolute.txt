@@ -1,6 +1,7 @@
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\bin\Debug\net8.0\EstoreModel.deps.json
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\bin\Debug\net8.0\EstoreModel.dll
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\bin\Debug\net8.0\EstoreModel.pdb
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.csproj.AssemblyReference.cache
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.GeneratedMSBuildEditorConfig.editorconfig
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.AssemblyInfoInputs.cache
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.AssemblyInfo.cs

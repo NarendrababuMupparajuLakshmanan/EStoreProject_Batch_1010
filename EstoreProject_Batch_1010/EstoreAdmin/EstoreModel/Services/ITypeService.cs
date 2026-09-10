@@ -13,5 +13,7 @@ namespace EstoreModel.Services
         UpdateTypeModel EditType(Guid Id);
 
         void UpdateType(UpdateTypeModel updateTypeModel);
+
+        string GetTypeNameById(Guid Id);
     }
 }

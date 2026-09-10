@@ -13,5 +13,7 @@ namespace EstoreModel.Services
         UpdateBrandMOdel EditBrand(Guid Id);
 
         void UpdateBrand(UpdateBrandMOdel updateBrandMOdel);
+
+        string GetBrandNameById(Guid Id);
     }
 }

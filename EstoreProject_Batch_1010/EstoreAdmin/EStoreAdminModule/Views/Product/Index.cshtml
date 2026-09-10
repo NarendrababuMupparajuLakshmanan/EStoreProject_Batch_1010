@@ -1,6 +1,6 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @using EstoreModel.Models.Products;
-@model IEnumerable<ProductModel>;
+@model IEnumerable<ProductList>;
 
 <html>
 <head>
@@ -30,7 +30,7 @@
             <table class="table table-primary table-hover">
                 <thead>
                     <tr>
-                        <td>Product Id</td>
+                       
                         <td>Product Name</td>
                         <td>Product Description</td>
                         <td>Brand Name</td>
@@ -47,7 +47,7 @@
                     @if (Model.Count() == 0)
                     {
                         <tr>
-                            <td colspan="10">
+                            <td colspan="9">
                                 <div class="h3 text-bg-danger text-center">
                                     There is no Products Available
                                 </div>
@@ -56,15 +56,19 @@
                     }
                     else
                     {
-                        @foreach (ProductModel productModel in Model)
+                        @foreach (ProductList productModel in Model)
                         {
                             <tr>
-                                <td>@productModel.Id</td>
+                             
                                 <td>@productModel.ProductName</td>
                                 <td>@productModel.ProductDescription</td>
-                                <td>@productModel.ImageName</td>
-                                <td>@productModel.BrandId</td>
-                                <td>@productModel.TypeId</td>
+                              
+                                <td>@productModel.BrandName</td>
+                                <td>@productModel.TypeName</td>
+                                <td>
+                                    <img src="~/ProductImages/@productModel.ImageName"
+                                         alt="@productModel.ImageName" width="100px" height="100px" />
+                                </td>
                                 <td>@productModel.Price</td>
                                 <td>@productModel.TotalCost</td>
                                 <td>
@@ -75,8 +79,8 @@
                                 </td>
                                 <td>
                                     <a class="btn btn-outline-danger"
-                                       asp-controller="Brand"
-                                       asp-action="DeleteBrand"
+                                       asp-controller="Product"
+                                       asp-action="DeleteProduct"
                                        asp-route-Id="@productModel.Id">Delete</a>
                                 </td>
                             </tr>

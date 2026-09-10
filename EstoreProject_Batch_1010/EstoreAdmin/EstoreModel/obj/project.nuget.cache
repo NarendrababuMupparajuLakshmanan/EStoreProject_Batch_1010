@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "3IDgBrXrArQ=",
+  "dgSpecHash": "5jY2kvUiIJs=",
   "success": true,
   "projectFilePath": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\EstoreAdmin\\EstoreModel\\EstoreModel.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

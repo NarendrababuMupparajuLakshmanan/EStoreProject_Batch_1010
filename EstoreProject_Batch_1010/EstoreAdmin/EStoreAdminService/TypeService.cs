@@ -68,6 +68,24 @@ namespace EStoreAdminService
             return updateTypeModel;
         }
 
+        public string GetTypeNameById(Guid Id)
+        {
+            if (Id == Guid.Empty)
+            {
+                throw new ArgumentException("Invalid Id");
+            }
+
+            TypeModel? typeModel
+                = this._typeRepository.Types.Where(t => t.Id == Id).FirstOrDefault();
+
+            if (typeModel == null)
+            {
+                throw new ArgumentException("Type not found");
+            }
+
+            return typeModel.Name;
+        }
+
         public List<TypeModel> ListTypes()
         {
             List<TypeModel> types =
