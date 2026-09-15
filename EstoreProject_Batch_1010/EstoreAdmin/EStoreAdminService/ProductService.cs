@@ -122,5 +122,94 @@ namespace EStoreAdminService
             this._productRepository.Products.Remove(productModel);
             this._productRepository.SaveChanges();
         }
+
+        public UpdateProductModel EditProduct(Guid Id)
+        {
+            if (Id == Guid.Empty)
+            {
+                throw new ArgumentNullException(nameof(Id));
+            }
+
+            ProductModel? productModel
+                = this._productRepository.Products.Where(p => p.Id == Id).FirstOrDefault();
+
+            if (productModel == null)
+            {
+                throw new ArgumentNullException(nameof(productModel));
+            }
+
+            UpdateProductModel updateProductModel = new UpdateProductModel
+            {
+                Id = productModel.Id,
+                ProductName = productModel.ProductName,
+                ProductDescription = productModel.ProductDescription,
+                BrandId = productModel.BrandId,
+                TypeId = productModel.TypeId,
+                ImagePath = productModel.ImageName,
+                ProductPrice = (int)productModel.Price
+            };
+
+            return updateProductModel;
+        }
+
+        public void UpdateProduct(UpdateProductModel updateProductModel, string ImageFullPath)
+        {
+            ProductModel? productModel =
+                  this._productRepository.Products.Where(p => p.Id == updateProductModel.Id).FirstOrDefault();
+            string ImageName = string.Empty;
+            if (updateProductModel == null)
+            {
+                throw new ArgumentNullException(nameof(updateProductModel));
+            }
+
+            if (updateProductModel.UploadImage != null)
+            {
+                //Delete the Existing Product Image from the server
+                string  ImageFullPaths = ImageFullPath;
+                ImageFullPaths += productModel.ImageName.ToString();
+                File.Delete(ImageFullPaths);
+
+                //Save the new image to the server
+                ImageName = Guid.NewGuid().ToString();
+                ImageName = ImageName + Path.GetExtension(updateProductModel.UploadImage.FileName);
+                ImageFullPath += ImageName;
+                //Save the image to the specified path
+                using (var stream = new FileStream(ImageFullPath, FileMode.Create))
+                {
+                    updateProductModel.UploadImage.CopyTo(stream);
+                }
+            }
+            else
+            {
+                if (productModel == null)
+                {
+                    throw new ArgumentNullException(nameof(productModel));
+                }
+                ImageName = productModel.ImageName;
+                ImageFullPath= productModel.ImageUrl;
+            }
+
+            if (productModel == null)
+            {
+                throw new ArgumentNullException(nameof(productModel));
+            }
+            //Build Logic for GST
+            int totalCost = CaculateGSTAmount(updateProductModel.ProductPrice);
+
+            //Map the updated values to the product model
+            productModel.ProductName = updateProductModel.ProductName;
+            productModel.ProductDescription = updateProductModel.ProductDescription;
+            productModel.BrandId = updateProductModel.BrandId;
+            productModel.TypeId = updateProductModel.TypeId;
+            productModel.Price = updateProductModel.ProductPrice;
+            productModel.GST = totalCost;
+            productModel.ImageUrl = ImageFullPath;
+            productModel.ImageName = ImageName;
+            productModel.TotalCost = totalCost;
+
+            //Update the product in the database
+            this._productRepository.Products.Update(productModel);
+            this._productRepository.SaveChanges();
+        }
     }
 }

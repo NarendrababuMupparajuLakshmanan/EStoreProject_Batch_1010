@@ -28,7 +28,7 @@ namespace EStoreAdminModule.Controllers
         [Route("/")]
         public IActionResult Index()
         {
-            List<ProductList> products = 
+            List<ProductList> products =
                 this._productService.GetAllProducts();
 
             return View(products);
@@ -72,6 +72,36 @@ namespace EStoreAdminModule.Controllers
             ImageFullPath = ImageFullPath + "\\wwwroot\\ProductImages\\";
 
             this._productService.DeleteProduct(Id, ImageFullPath);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        [Route("EditProduct/{Id:guid}")]
+        public ActionResult EditProduct(Guid Id)
+        {
+
+            List<BrandModel> brands = this._brandService.ListBrands();
+
+            List<TypeModel> types = this._typeService.ListTypes();
+
+            ViewBag.Brands = brands;
+            ViewBag.Types = types;
+
+            UpdateProductModel updateProductModel =
+                this._productService.EditProduct(Id);
+
+
+            return View(updateProductModel);
+        }
+
+        [HttpPost]
+        [Route("EditProduct/{id:guid}")]
+        public ActionResult EditProduct(UpdateProductModel updateProductModel)
+        {
+            string ImageFullPath = this._webHostEnvironment.ContentRootPath;
+            ImageFullPath = ImageFullPath + "\\wwwroot\\ProductImages\\";
+
+            this._productService.UpdateProduct(updateProductModel, ImageFullPath);
             return RedirectToAction("Index");
         }
     }

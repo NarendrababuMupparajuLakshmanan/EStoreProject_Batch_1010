@@ -31,16 +31,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcRWRpdEJyYW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_EStoreProject_1010/EstoreProject_Batch_1010/EstoreAdmin/EStoreAdminModule/Views/Brand/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcSW5kZXguY3NodG1s
+[D:/Git_EStoreProject_1010/EstoreProject_Batch_1010/EstoreAdmin/EStoreAdminModule/Views/Brand/ListBrand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcTGlzdEJyYW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Git_EStoreProject_1010/EstoreProject_Batch_1010/EstoreAdmin/EStoreAdminModule/Views/Product/CreateProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGVQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Git_EStoreProject_1010/EstoreProject_Batch_1010/EstoreAdmin/EStoreAdminModule/Views/Product/EditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Git_EStoreProject_1010/EstoreProject_Batch_1010/EstoreAdmin/EStoreAdminModule/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Git_EStoreProject_1010/EstoreProject_Batch_1010/EstoreAdmin/EStoreAdminModule/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Git_EStoreProject_1010/EstoreProject_Batch_1010/EstoreAdmin/EStoreAdminModule/Views/Type/CreateType.cshtml]
@@ -51,6 +59,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZVxFZGl0VHlwZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_EStoreProject_1010/EstoreProject_Batch_1010/EstoreAdmin/EStoreAdminModule/Views/Type/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZVxJbmRleC5jc2h0bWw=
+[D:/Git_EStoreProject_1010/EstoreProject_Batch_1010/EstoreAdmin/EStoreAdminModule/Views/Type/ListTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHlwZVxMaXN0VHlwZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -9,5 +9,9 @@ namespace EstoreModel.Services
         void CreateProduct(CreateProductModel createProductModel, string ImageFullPath);
 
         void DeleteProduct(Guid Id, string ImageFullPath);
+
+        UpdateProductModel EditProduct(Guid Id);
+
+        void UpdateProduct(UpdateProductModel updateProductModel, string ImageFullPath);
     }
 }

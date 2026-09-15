@@ -1,5 +1,4 @@
-wwwroot\ProductImages\87ef654f-3e8f-4879-a261-2645684f1839.jpg
-wwwroot\ProductImages\99252124-1fc4-46cf-9cfc-83f3471da0fa.jpg
+wwwroot\Images\Logo.jpg
 wwwroot\bootstrap\css\bootstrap-grid.css
 wwwroot\bootstrap\css\bootstrap-grid.css.map
 wwwroot\bootstrap\css\bootstrap-grid.min.css

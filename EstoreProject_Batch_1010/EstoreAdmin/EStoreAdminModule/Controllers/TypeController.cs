@@ -15,8 +15,8 @@ namespace EStoreAdminModule.Controllers
 
 
         [HttpGet]
-        [Route("ListType")]
-        public IActionResult Index()
+        [Route("ListTypes")]
+        public IActionResult ListTypes()
         {
             List<TypeModel> types =
                 this._typeService.ListTypes();
@@ -30,7 +30,7 @@ namespace EStoreAdminModule.Controllers
         {
             this._typeService.DeleteType(Id);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("ListTypes");
         }
 
         [HttpGet]
@@ -46,7 +46,7 @@ namespace EStoreAdminModule.Controllers
         {
             this._typeService.CreateType(createTypeModel);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("ListTypes");
         }
 
         [HttpGet]
@@ -67,7 +67,7 @@ namespace EStoreAdminModule.Controllers
 
             this._typeService.UpdateType(updateTypeModel);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("ListTypes");
         }
     }
 }

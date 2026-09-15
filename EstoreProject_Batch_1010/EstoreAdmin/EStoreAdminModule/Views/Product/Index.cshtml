@@ -2,93 +2,89 @@
 @using EstoreModel.Models.Products;
 @model IEnumerable<ProductList>;
 
-<html>
-<head>
-    <title>List of Products</title>
-    <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="h1 text-center bg-primary text-white mt-3">
-                List of Products
-            </div>
-        </div>
 
-        <div class="row mt-3">
-            <div class="col-md-3 col-lg-3 col-sm-3">
-                <a class="btn btn-outline-primary"
-                   asp-controller="Product"
-                   asp-action="CreateProduct">
-                    Create Product
-                </a>
-            </div>
-        </div>
-
-        <div class="row mt-3">
-            <table class="table table-primary table-hover">
-                <thead>
-                    <tr>
-                       
-                        <td>Product Name</td>
-                        <td>Product Description</td>
-                        <td>Brand Name</td>
-                        <td>Type Name</td>
-                        <td>Product Image </td>
-                        <td>Price</td>
-                        <td>Total Price</td>
-                        <td>Edit</td>
-                        <td>Delete</td>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    @if (Model.Count() == 0)
-                    {
-                        <tr>
-                            <td colspan="9">
-                                <div class="h3 text-bg-danger text-center">
-                                    There is no Products Available
-                                </div>
-                            </td>
-                        </tr>
-                    }
-                    else
-                    {
-                        @foreach (ProductList productModel in Model)
-                        {
-                            <tr>
-                             
-                                <td>@productModel.ProductName</td>
-                                <td>@productModel.ProductDescription</td>
-                              
-                                <td>@productModel.BrandName</td>
-                                <td>@productModel.TypeName</td>
-                                <td>
-                                    <img src="~/ProductImages/@productModel.ImageName"
-                                         alt="@productModel.ImageName" width="100px" height="100px" />
-                                </td>
-                                <td>@productModel.Price</td>
-                                <td>@productModel.TotalCost</td>
-                                <td>
-                                    <a class="btn btn-outline-secondary"
-                                       asp-controller="Brand"
-                                       asp-action="EditBrand"
-                                       asp-route-Id="@productModel.Id">Edit</a>
-                                </td>
-                                <td>
-                                    <a class="btn btn-outline-danger"
-                                       asp-controller="Product"
-                                       asp-action="DeleteProduct"
-                                       asp-route-Id="@productModel.Id">Delete</a>
-                                </td>
-                            </tr>
-                        }
-                    }
-                </tbody>
-            </table>
-        </div>
+<div class="row">
+    <div class="h1 text-center bg-primary text-white mt-3">
+        List of Products
     </div>
-</body>
-</html>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-3 col-lg-3 col-sm-3">
+        <a class="btn btn-outline-primary"
+           asp-controller="Product"
+           asp-action="CreateProduct">
+            Create Product
+        </a>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <table class="table table-primary table-hover">
+        <thead>
+            <tr>
+
+                <td>Product Name</td>
+                <td>Product Description</td>
+                <td>Brand Name</td>
+                <td>Type Name</td>
+                <td>Product Image </td>
+                <td>Price</td>
+                <td>Total Price</td>
+                <td>Edit</td>
+                <td>Delete</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model.Count() == 0)
+            {
+                <tr>
+                    <td colspan="9">
+                        <div class="h3 text-bg-danger text-center">
+                            There is no Products Available
+                        </div>
+                    </td>
+                </tr>
+            }
+            else
+            {
+                @foreach (ProductList productModel in Model)
+                {
+                    <tr>
+
+                        <td>@productModel.ProductName</td>
+                        <td>@productModel.ProductDescription</td>
+
+                        <td>@productModel.BrandName</td>
+                        <td>@productModel.TypeName</td>
+                        <td>
+                            <img src="~/ProductImages/@productModel.ImageName"
+                                 alt="@productModel.ImageName" width="100px" height="100px" />
+                        </td>
+                        <td>@productModel.Price</td>
+                        <td>@productModel.TotalCost</td>
+                        <td>
+                            <a class="btn btn-outline-secondary"
+                               asp-controller="Product"
+                               asp-action="EditProduct"
+                               asp-route-Id="@productModel.Id">Edit</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-outline-danger"
+                               asp-controller="Product"
+                               asp-action="DeleteProduct"
+                               asp-route-Id="@productModel.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+   
