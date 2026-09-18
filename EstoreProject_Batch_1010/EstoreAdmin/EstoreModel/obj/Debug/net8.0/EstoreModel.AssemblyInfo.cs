@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EstoreModel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+513cbf5d1988149d42a667ea03a7e276c030f6f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdda5e4539f6378e76dbe7889d5497757c5487bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("EstoreModel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EstoreModel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

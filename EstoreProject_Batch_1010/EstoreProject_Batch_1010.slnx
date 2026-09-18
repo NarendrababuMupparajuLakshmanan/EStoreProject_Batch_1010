@@ -5,4 +5,11 @@
     <Project Path="EstoreAdmin/EstoreModel/EstoreModel.csproj" />
     <Project Path="EstoreAdmin/EStoreRepository/EStoreRepository.csproj" Id="3fa02aa6-ce5b-4694-adc0-9b293f3c5896" />
   </Folder>
+  <Folder Name="/Services/" />
+  <Folder Name="/Services/Catalog/">
+    <Project Path="Services/Catalog/Catalog.API/Catalog.API.csproj" Id="c1221870-9815-454b-b42e-f59d43bcc233" />
+    <Project Path="Services/Catalog/Catalog.Application/Catalog.Application.csproj" Id="f9aed8f9-5a9d-47f4-b6c0-8179ae5c2000" />
+    <Project Path="Services/Catalog/Catalog.Core/Catalog.Core.csproj" Id="aeffbaf1-d7c2-49b0-af19-03cdd1805ee2" />
+    <Project Path="Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj" Id="4ee8ed2f-6786-42a2-8328-05cfb5e3fc02" />
+  </Folder>
 </Solution>

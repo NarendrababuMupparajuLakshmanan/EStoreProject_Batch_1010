@@ -1,0 +1,16 @@
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\bin\Debug\net8.0\Catalog.Infrastructure.deps.json
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\bin\Debug\net8.0\Catalog.Infrastructure.dll
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\bin\Debug\net8.0\Catalog.Infrastructure.pdb
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\bin\Debug\net8.0\Catalog.Core.dll
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\bin\Debug\net8.0\Catalog.Core.pdb
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\obj\Debug\net8.0\Catalog.Infrastructure.csproj.AssemblyReference.cache
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\obj\Debug\net8.0\Catalog.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\obj\Debug\net8.0\Catalog.Infrastructure.AssemblyInfoInputs.cache
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\obj\Debug\net8.0\Catalog.Infrastructure.AssemblyInfo.cs
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\obj\Debug\net8.0\Catalog.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\obj\Debug\net8.0\Catalog.Infrastructure.sourcelink.json
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\obj\Debug\net8.0\Catalog..168C4A48.Up2Date
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\obj\Debug\net8.0\Catalog.Infrastructure.dll
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\obj\Debug\net8.0\refint\Catalog.Infrastructure.dll
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\obj\Debug\net8.0\Catalog.Infrastructure.pdb
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Infrastructure\obj\Debug\net8.0\ref\Catalog.Infrastructure.dll

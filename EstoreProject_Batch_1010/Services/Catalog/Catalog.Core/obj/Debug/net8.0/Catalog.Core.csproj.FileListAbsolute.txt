@@ -1,0 +1,12 @@
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\bin\Debug\net8.0\Catalog.Core.deps.json
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\bin\Debug\net8.0\Catalog.Core.dll
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\bin\Debug\net8.0\Catalog.Core.pdb
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\obj\Debug\net8.0\Catalog.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\obj\Debug\net8.0\Catalog.Core.AssemblyInfoInputs.cache
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\obj\Debug\net8.0\Catalog.Core.AssemblyInfo.cs
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\obj\Debug\net8.0\Catalog.Core.csproj.CoreCompileInputs.cache
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\obj\Debug\net8.0\Catalog.Core.sourcelink.json
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\obj\Debug\net8.0\Catalog.Core.dll
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\obj\Debug\net8.0\refint\Catalog.Core.dll
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\obj\Debug\net8.0\Catalog.Core.pdb
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\Services\Catalog\Catalog.Core\obj\Debug\net8.0\ref\Catalog.Core.dll

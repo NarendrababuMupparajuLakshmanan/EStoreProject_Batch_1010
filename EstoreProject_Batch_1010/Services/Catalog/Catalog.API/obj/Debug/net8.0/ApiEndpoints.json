@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "Catalog.API.Controllers.BrandController",
+    "Method": "CreateBrand",
+    "RelativePath": "api/Brand/CreateBrand",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createBrand",
+        "Type": "Catalog.Core.DTOs.Brands.CreateBrandDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Catalog.API.Controllers.BrandController",
+    "Method": "GetAllBrands",
+    "RelativePath": "api/Brand/GetAllBrands",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
