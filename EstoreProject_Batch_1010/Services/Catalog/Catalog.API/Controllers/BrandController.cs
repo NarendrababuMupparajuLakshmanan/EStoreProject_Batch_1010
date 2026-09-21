@@ -36,6 +36,38 @@ namespace Catalog.API.Controllers
 
             return Ok(result);
         }
-             
+
+        [HttpDelete]
+        [Route("DeleteBrand/{Id:guid}")]
+        public IActionResult DeleteBrand(Guid Id)
+        {
+            var command = new DeleteBrandCommand(Id);
+
+            var result = this._mediator.Send(command);
+
+            return Ok();
+        }
+
+        [HttpPut]
+        [Route("UpdateBrand")]
+        public IActionResult UpdateBrand(UpdateBrandDTO updateBrandDTO)
+        {
+            var command = new UpdateBrandCommand(updateBrandDTO);
+            var result = this._mediator.Send(command);
+
+            return Ok();
+        }
+
+        [HttpGet]
+        [Route("GetBrandById/{id:guid}")]
+        public IActionResult GetBrandById(Guid Id)
+        {
+            var query = new GetBrandByIdQuery(Id);
+            var response = this._mediator.Send(query).Result;
+
+            return Ok(response);
+        }
+
+
     }
 }

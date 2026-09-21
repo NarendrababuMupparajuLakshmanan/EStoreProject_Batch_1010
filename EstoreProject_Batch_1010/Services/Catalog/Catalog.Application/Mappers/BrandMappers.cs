@@ -24,5 +24,18 @@ namespace Catalog.Application.Mappers
             return brandDTOs;
         }
 
+
+        public static BrandDTO ToBrandMapper
+        (this BrandModel brandmodel)
+        {
+            BrandDTO brandDTO = null;
+            if (brandmodel != null)
+            {
+                brandDTO = new BrandDTO(brandmodel.Id, brandmodel.Name);
+            }
+
+            return brandDTO;
+        }
+
     }
 }
