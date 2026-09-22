@@ -102,10 +102,45 @@
         }
       }
     },
-    "/api/Brand/GetBrandById/{id}": {
+    "/api/Brand/GetBrandById/{Id}": {
       "get": {
         "tags": [
           "Brand"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Type/GetAllTypes": {
+      "get": {
+        "tags": [
+          "Type"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Type/GetTypeById/{Id}": {
+      "get": {
+        "tags": [
+          "Type"
         ],
         "parameters": [
           {
@@ -157,6 +192,9 @@
   "tags": [
     {
       "name": "Brand"
+    },
+    {
+      "name": "Type"
     }
   ]
 }

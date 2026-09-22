@@ -44,7 +44,7 @@
   {
     "ContainingType": "Catalog.API.Controllers.BrandController",
     "Method": "GetBrandById",
-    "RelativePath": "api/Brand/GetBrandById/{id}",
+    "RelativePath": "api/Brand/GetBrandById/{Id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -68,6 +68,32 @@
       {
         "Name": "updateBrandDTO",
         "Type": "Catalog.Core.DTOs.Brands.UpdateBrandDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Catalog.API.Controllers.TypeController",
+    "Method": "GetAllTypes",
+    "RelativePath": "api/Type/GetAllTypes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Catalog.API.Controllers.TypeController",
+    "Method": "GetTypeById",
+    "RelativePath": "api/Type/GetTypeById/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

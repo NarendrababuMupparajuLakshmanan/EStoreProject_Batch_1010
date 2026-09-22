@@ -20,6 +20,11 @@ builder.Services.AddDbContext<BrandRepository>(options =>
     options.UseSqlServer(_connectionString);
 });
 
+builder.Services.AddDbContext<TypeRepository>(options =>
+{
+    options.UseSqlServer(_connectionString);
+});
+
 var app = builder.Build();
 
 app.UseRouting();

@@ -59,7 +59,7 @@ namespace Catalog.API.Controllers
         }
 
         [HttpGet]
-        [Route("GetBrandById/{id:guid}")]
+        [Route("GetBrandById/{Id:guid}")]
         public IActionResult GetBrandById(Guid Id)
         {
             var query = new GetBrandByIdQuery(Id);
@@ -67,7 +67,6 @@ namespace Catalog.API.Controllers
 
             return Ok(response);
         }
-
 
     }
 }
