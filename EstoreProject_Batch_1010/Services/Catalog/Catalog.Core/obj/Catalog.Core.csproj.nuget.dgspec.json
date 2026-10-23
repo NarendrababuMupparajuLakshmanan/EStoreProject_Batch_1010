@@ -10,14 +10,14 @@
         "projectUniqueName": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\Services\\Catalog\\Catalog.Core\\Catalog.Core.csproj",
         "projectName": "Catalog.Core",
         "projectPath": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\Services\\Catalog\\Catalog.Core\\Catalog.Core.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
         "outputPath": "D:\\Git_EStoreProject_1010\\EstoreProject_Batch_1010\\Services\\Catalog\\Catalog.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -46,12 +46,18 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.400"
       },
       "frameworks": {
         "net8.0": {
           "framework": "net8.0",
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -68,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

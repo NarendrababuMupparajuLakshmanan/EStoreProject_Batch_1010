@@ -11,3 +11,4 @@ D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\obj\D
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\obj\Debug\net8.0\refint\EstoreModel.dll
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreModel.pdb
 D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\obj\Debug\net8.0\ref\EstoreModel.dll
+D:\Git_EStoreProject_1010\EstoreProject_Batch_1010\EstoreAdmin\EstoreModel\obj\Debug\net8.0\EstoreMo.5B95485A.Up2Date

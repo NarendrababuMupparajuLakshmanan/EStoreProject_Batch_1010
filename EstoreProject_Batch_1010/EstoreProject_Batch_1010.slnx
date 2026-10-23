@@ -6,6 +6,12 @@
     <Project Path="EstoreAdmin/EStoreRepository/EStoreRepository.csproj" Id="3fa02aa6-ce5b-4694-adc0-9b293f3c5896" />
   </Folder>
   <Folder Name="/Services/" />
+  <Folder Name="/Services/Basket/">
+    <Project Path="Services/Basket/Basket.API/Basket.API.csproj" Id="62698660-ff28-45d4-b10d-dbbf5503206d" />
+    <Project Path="Services/Basket/Basket.Application/Basket.Application.csproj" Id="e5985099-360a-4616-8307-602967a3439e" />
+    <Project Path="Services/Basket/Basket.Core/Basket.Core.csproj" Id="4bd06c9e-f604-4b9e-88ce-eace035e2d17" />
+    <Project Path="Services/Basket/Basket.Infrastructure/Basket.Infrastructure.csproj" Id="47b7b19d-b30a-43ad-b139-c23a4d8b610c" />
+  </Folder>
   <Folder Name="/Services/Catalog/">
     <Project Path="Services/Catalog/Catalog.API/Catalog.API.csproj" Id="c1221870-9815-454b-b42e-f59d43bcc233" />
     <Project Path="Services/Catalog/Catalog.Application/Catalog.Application.csproj" Id="f9aed8f9-5a9d-47f4-b6c0-8179ae5c2000" />

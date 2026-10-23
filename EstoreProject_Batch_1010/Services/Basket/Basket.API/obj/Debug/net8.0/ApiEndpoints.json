@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "Basket.API.Controllers.BasketController",
+    "Method": "GetBasket",
+    "RelativePath": "api/Basket/GetBasket",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
