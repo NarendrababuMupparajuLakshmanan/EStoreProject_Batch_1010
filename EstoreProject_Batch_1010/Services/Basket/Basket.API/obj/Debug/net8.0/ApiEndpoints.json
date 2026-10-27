@@ -1,12 +1,44 @@
 [
   {
     "ContainingType": "Basket.API.Controllers.BasketController",
+    "Method": "DeleteBasket",
+    "RelativePath": "api/Basket/DeleteBasket/{userName}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basket.API.Controllers.BasketController",
     "Method": "GetBasket",
     "RelativePath": "api/Basket/GetBasket",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Basket.API.Controllers.BasketController",
+    "Method": "GetBasketByUserName",
+    "RelativePath": "api/Basket/GetBasketByUserName/{userName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

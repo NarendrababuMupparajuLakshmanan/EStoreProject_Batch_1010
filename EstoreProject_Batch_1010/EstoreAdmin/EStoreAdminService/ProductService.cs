@@ -62,7 +62,10 @@ namespace EStoreAdminService
                 this._productRepository.Products.Add(productModel);
                 this._productRepository.SaveChanges();
 
+                //API Service Call Using HttpClient --> Service to Service Communication
+
             }
+
 
         }
 
